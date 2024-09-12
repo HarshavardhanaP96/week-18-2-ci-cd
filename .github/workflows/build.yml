@@ -20,5 +20,8 @@ jobs:
       - name: install dependencies
         run: npm install
 
+      - name: generate prisma client
+        run: npm run db:generate
+
       - name: build the project
         run: npm run build
